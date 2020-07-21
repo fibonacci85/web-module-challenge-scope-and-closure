@@ -42,6 +42,9 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+
+closure is the data passed from an outer function to an inner function. 
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -58,11 +61,14 @@ const dansRoll = personalDice("Dan");
 const zoesRoll = personalDice("Zoe");
 
 
-dansRoll();
-dansRoll();
+console.log (dansRoll());
+console.log (dansRoll());
+
 ```
 
 a. Where is closure used in this code? How can you tell?
+'name' parameter/argument - I can tell because when calling 'name' it's used as an argument for personalDice and it's then referenced to newRoll 
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
 c. What is the lexical scope of `newRoll`? 
 
